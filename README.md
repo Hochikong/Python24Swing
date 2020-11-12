@@ -60,7 +60,12 @@ I recommend you to create swing applications in the style above. No matter what 
 
 #### How
 
-Use NetBeans to design swing GUI, after create empty event handler methods, use //<Auto-Generate>  and //</Auto-Generate> to warp them:
+Use NetBeans to design swing GUI, after create empty event handler methods, use two xml style comments to warp them:
+```
+    //<Auto-Generate> 
+    You Java Code
+    //</Auto-Generate>
+```
 
 ```
     //<Auto-Generate>
