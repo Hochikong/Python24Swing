@@ -18,10 +18,10 @@ For example, method below:
 
 ```java
 class ComboBoxInJava {
-	// hidden code
-	private void ComboBoxItemStateChanged(ItemEvent evt){
-			// TODO
-		}
+    // hidden code
+    private void ComboBoxItemStateChanged(ItemEvent evt){
+        // TODO
+    }
 }
 ```
 
@@ -29,15 +29,15 @@ class ComboBoxInJava {
 
 ```java
 class ComboBoxInJava {
-	private void ComboBoxItemStateChanged(ItemEvent evt){
-		impComboBoxItemStateChanged(ItemEvent evt)
-	}
+    private void ComboBoxItemStateChanged(ItemEvent evt){
+        impComboBoxItemStateChanged(ItemEvent evt)
+    }
 
-	// hidden code
+    // hidden code
 
-	protected void impComboBoxItemStateChanged(ItemEvent evt){
-		// Do something
-	}
+    protected void impComboBoxItemStateChanged(ItemEvent evt){
+        // Do something
+    }
 }
 
 ```
@@ -48,9 +48,9 @@ After all these steps have done, you can use subclass to extends the swing code 
 class ComboBoxInKotlin : ComboBoxInJava() {
     // hidden code
     
-	override fun impComboBoxItemStateChanged(evt: ItemEvent){
-		// Do what you do
-	}
+    override fun impComboBoxItemStateChanged(evt: ItemEvent){
+        // Do what you do
+    }
     
     // hidden code
 }
@@ -60,10 +60,10 @@ I recommend you to create swing applications in the style above. No matter what 
 
 #### How
 
-Use NetBeans to design swing GUI, after create empty event handler methods, use **//<Auto-Generate>**  and **//</Auto-Generate>** to warp them:
+Use NetBeans to design swing GUI, after create empty event handler methods, use //<Auto-Generate>  and //</Auto-Generate> to warp them:
 
 ```
-	//<Auto-Generate>
+    //<Auto-Generate>
     private void ComboBoxTargetMetaLibItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_ComboBoxTargetMetaLibItemStateChanged
         impComboBoxTargetMetaLibItemStateChanged(evt);
     }//GEN-LAST:event_ComboBoxTargetMetaLibItemStateChanged
