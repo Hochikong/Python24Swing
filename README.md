@@ -67,6 +67,8 @@ Use NetBeans to design swing GUI, after create empty event handler methods, use 
     //</Auto-Generate>
 ```
 
+Just like this
+
 ```
     //<Auto-Generate>
     private void ComboBoxTargetMetaLibItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_ComboBoxTargetMetaLibItemStateChanged
