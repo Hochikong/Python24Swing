@@ -84,6 +84,7 @@ def scan_private_event_methods(filename: str, path: str) -> bool:
             os.mkdir("codegen")
         with open("codegen/imp{}".format(filename), 'w', encoding='utf-8') as f:
             f.writelines(final_list)
+        print("\n")
         return True
 
     else:
